@@ -1,0 +1,121 @@
+body {
+    background-color: #242424;
+    text-align: center;
+    color: #ffffff;
+    font-family: "calibri";
+    font-size: large;
+    padding: 0 1rem;
+}
+
+body h1 {
+  color: #00D7FF;
+}
+
+body h1 span{
+  color: #0096FF;
+}
+
+a:link {
+    color: #0096FF;
+}
+a:visited {
+    color: #00D7FF;
+}
+a:hover {
+    color: #006274;
+}
+a:active {
+    color: #00fff2;
+}
+
+.profilepic {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border-top: #0096FF;
+    border-bottom: #00D7FF;
+    border-left: #0096FF;
+    border-right: #00D7FF;
+    border-style: solid;
+    border-width: 10px;
+    display: block;
+    margin: 50px auto;
+}
+
+.profilepic:hover {
+    border-top: #00D7FF;
+    border-bottom: #0096FF;
+    border-left: #00D7FF;
+    border-right: #0096FF;
+    border-style: solid;
+    border-width: 10px;
+    display: block;
+    margin: 50px auto;
+    transition: 0.5s;
+}
+
+.icons i{
+  height: 70px;
+  width: 70px;
+  display: inline-block;
+  margin: 1rem 1rem;
+  cursor: pointer;
+  position: relative;
+}
+.icons i:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #0096FF, #00D7FF);
+  transition: all 0.3s ease-in;
+}
+.icons i:hover:before{
+  transform: rotate(360deg);
+  border-radius: 100%;
+}
+.icons i a span{
+  font-size: 30px;
+  line-height: 70px;
+  color: #fff;
+  transition: all 0.3s ease-out;
+}
+.icons i:hover a span{
+  transform: scale(1.2);
+}
+
+.buttoncontainer {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.buttons {
+    background: #0096FF;
+    border: none;
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: large;
+    transition: 0.8s;
+    text-transform: uppercase;
+}
+
+.buttons:hover {
+    background: #00D7FF;
+    transition: 0.8s;
+}
+
+.formacion {
+    text-align: left;
+}
+
+.formacion li {
+  margin: 1rem;
+}

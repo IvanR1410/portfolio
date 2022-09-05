@@ -2,9 +2,9 @@ body {
     background-color: #242424;
     text-align: center;
     color: #ffffff;
-    font-family: "calibri";
+    font-family: "Varela Round";
     font-size: large;
-    padding: 0 1rem;
+    margin: 0 1rem 1rem;
 }
 
 body h1 {
@@ -98,13 +98,13 @@ a:active {
     background: #0096FF;
     border: none;
     color: #ffffff;
-    padding: 15px 30px;
+    padding: 2% 3%;
     border-radius: 20px;
     cursor: pointer;
     margin: 10px;
-    font-size: large;
+    font-size: 100%;
     transition: 0.8s;
-    text-transform: uppercase;
+    font-family: "Varela Round"
 }
 
 .buttons:hover {

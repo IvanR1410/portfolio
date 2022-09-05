@@ -28,31 +28,36 @@ a:active {
     color: #00fff2;
 }
 
-.profilepic {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 50%;
-    border-top: #0096FF;
-    border-bottom: #00D7FF;
-    border-left: #0096FF;
-    border-right: #00D7FF;
-    border-style: solid;
-    border-width: 10px;
-    display: block;
-    margin: 50px auto;
+.portrait {
+  position: relative;
+  margin: 50px auto 10px;
+  display:inline-block
 }
 
-.profilepic:hover {
-    border-top: #00D7FF;
-    border-bottom: #0096FF;
-    border-left: #00D7FF;
-    border-right: #0096FF;
-    border-style: solid;
-    border-width: 10px;
-    display: block;
-    margin: 50px auto;
-    transition: 0.5s;
+.portrait .profilepic {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  top: 10px;
+  left: 10px;
+}
+
+.portrait .spinner {
+  width: 300px;
+  height: 300px;
+  border: 10px solid #0096FF;
+  border-right-color: #00D7FF;
+  border-bottom-color: #00D7FF;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.portrait:hover .spinner {
+  transform: rotate(-180deg);
 }
 
 .icons i{
